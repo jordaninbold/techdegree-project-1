@@ -6,6 +6,7 @@
         <title>Jordan Moyer's Profile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/6353147636.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
     </head>
@@ -14,10 +15,10 @@
     <!-- start body section -->
     <body>
 
-        <nav>
-            <ul>
-              <li>Jordan Moyer</li>
-              <li><a href="#">Home</a></li>
+        <nav class="main-nav">
+            <ul class="nav">
+              <li class="name">Jordan Moyer</li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="#">Experience</a></li>
               <li><a href="#">Contact Me</a></li>
             </ul>
@@ -25,16 +26,18 @@
 
         <!-- start header section -->
         <header>
-            <img src="" alt="">
-            <h1>Hello! I'm Jordan.</h1>
-            <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Physically in Dayton, Ohio</p>
-            <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Mentally in Marrakech, Morocco</p>
+            <img src="images/me.jpg" alt="A photo of Jordan Moyer" class="profile-image">
+            <h1 class="tag name">Hello! I'm Jordan.</h1>
+            <div>
+                <p class="tag location"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Physically in Dayton, Ohio</p>
+                <p class="tag location"><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Mentally in Marrakech, Morocco</p>
+            </div>
          </header>
         <!-- end header section -->
          
-        <main>
+        <main class="flex">
         <!-- start card one -->
-            <section>
+            <section class="card">
                 <h2>To sum it up...</h2>
                 <p>I'm a detail-oriented creative backed by the power of positive thinking and espresso. I love everything from illustration and pattern design to the perfectly aligned pixels of the web.</p>
                 <p>As a self-proclaimed nerd, I'm always looking for a new book to read or a new course to take to expand my skillset.</p>
@@ -42,36 +45,51 @@
         <!-- end card one -->
 
         <!-- start card two -->
-        <section>
-            <h2>Education &amp; Experience</h2>
-            <article>
-                <img src="" alt="">
-                <h3>Education</h3>
-                <p>2013 - 2015: The Modern College of Design<br>
-                Associates Degree of Applied Business in Advertising Art</p>
-                <p>March 2021 - Present: Treehouse Techdegree Program<br>
-                Currently working to complete the Front End Web Developer Treehouse Techdegree.</p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h3>Experience</h3>
-                <p>August 2015 - July 2017: Graphica, LLC • Graphic Designer<br>
-                Created logos, business cards, flyers, and other printed materials for clients such as Dayton Children's Hospital, Honeywell Aerospace, and Airstream.</p>
-                <p>January 2018 - Present: The Jewish Federation of Greater Dayton • Web &amp; Social Media Coordinator &amp; Graphic Designer<br>
-                Responsible for maintaining and designing the jewishdayton.org website, corresponding Facebook pages, and email campaigns as well as print materials such as event branding, brochures, flyers, and other branded materials. </p>
-            </article>
+            <section class="card">
+                <h2>Education &amp; Experience</h2>
+                <article>
+                    <img src="" alt="">
+                    <h3>Education</h3>
+                    <p>2013 - 2015: The Modern College of Design<br>
+                    Associates Degree of Applied Business in Advertising Art</p>
+                    <p>March 2021 - Present: Treehouse Techdegree Program<br>
+                    Currently working to complete the Front End Web Developer Treehouse Techdegree.</p>
+                </article>
+                <article>
+                    <img src="" alt="">
+                    <h3>Experience</h3>
+                    <p>August 2015 - July 2017: Graphica, LLC • Graphic Designer<br>
+                    Created logos, business cards, flyers, and other printed materials for clients such as Dayton Children's Hospital, Honeywell Aerospace, and Airstream.</p>
+                    <p>January 2018 - Present: The Jewish Federation of Greater Dayton • Web &amp; Social Media Coordinator &amp; Graphic Designer<br>
+                    Responsible for maintaining and designing the jewishdayton.org website, corresponding Facebook pages, and email campaigns as well as print materials such as event branding, brochures, flyers, and other branded materials. </p>
+                </article>
             </section>
         <!-- end card two -->
+
+         <!-- start card three -->
+            <section class="card">
+                <h2>Goals</h2>
+                <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Pyton</li>
+                    <li>Ruby</li>
+                </ul>
+                <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+            </section>
+        <!-- end card three -->
         </main>
 
         <!-- start footer -->
         <footer>
             <ul>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Github</a></li>
+              <li><a href="#" class="social twitter">Twitter</a></li>
+              <li><a href="#" class="social linkedin">LinkedIn</a></li>
+              <li><a href="#" class="social github">Github</a></li>
             </ul>
-            <p><small>&copy; 2021, Jordan Moyer</small></p>
+            <p class="copyright">&copy; 2021, Jordan Moyer</p>
         </footer>
         <!-- end footer -->
 
