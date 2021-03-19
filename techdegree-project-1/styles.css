@@ -70,24 +70,28 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 5px solid #e2e735;
     transition: all .5s;
   }
   header .profile-image:hover {
-    transform: scale(1.2) rotate(5deg);
+    transform: scale(1.5) rotate(-20deg);
   }
   .tag {
-    background-color: #efefef;
+    background-color: #fff;
     color: black;
     padding: 10px;
-    border-radius: 5px;
     display: table;
     margin: 10px auto;
   } 
   .location {
-    background-color: #222;
-    color: yellow;
+    background-color: black;
+    color: #79dea8;
   }
+
+  i{
+    color: #e2e735;
+  }
+
   .card {
     margin: 30px;
     padding: 20px 40px 40px;
@@ -99,7 +103,15 @@
     transition: all .5s;
   }
   .card:hover {
-    border-color: #ff40b4;
+    border-color: #79dea8;
+  }
+
+  h3{
+    color: #76777a;
+  }
+
+  .card img{
+    width: 100%;
   }
   
   ul.skills {
@@ -117,7 +129,13 @@
   }
   
   .skills li:nth-child(odd) {
-    background: #b14fc5;
+    background: black;
+  }
+
+  .skills li:hover{
+    background: #e2e735;
+    color: black;
+    transition: all .5s;
   }
   
   footer {
